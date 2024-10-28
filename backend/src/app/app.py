@@ -5,7 +5,7 @@ from src.utills import extract_text_pdf,extract_text_docx,extract,convert_chunks
 
 def main():  
     html_temp = """  
-    <div style="background-color: #33acff; padding: 8px; margin-bottom: 25px;">  
+    <div style="background-color: #33acff; padding: 8px; margin-bottom: 25px;">  cd
     <h1 style="color: #000000; text-align: center;">AI Powered Q & A System</h1>  
     </div>  
     """  
