@@ -1,0 +1,9 @@
+setup.py
+Question_and_Answering_Project.egg-info/PKG-INFO
+Question_and_Answering_Project.egg-info/SOURCES.txt
+Question_and_Answering_Project.egg-info/dependency_links.txt
+Question_and_Answering_Project.egg-info/requires.txt
+Question_and_Answering_Project.egg-info/top_level.txt
+src/__init__.py
+src/app/__init__.py
+src/app/app.py
