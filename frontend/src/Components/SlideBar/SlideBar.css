@@ -1,0 +1,103 @@
+.slidebar{
+    display: flex;
+    background-color: #F0DBDB;
+    height: 100vh;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-right: solid white;
+}
+.slidebar a{
+    text-decoration: none;
+}
+
+.logo img{
+    border-radius: 90px;
+    margin-top: 10px;
+    height: 110px;
+    width: 90px;
+    display: flex;
+    vertical-align: middle;
+    margin: 0 auto;
+    object-fit: cover;
+    border: 3px solid gold;
+}
+
+.home-section{
+    color: black;
+    margin-top: 25px;
+    border-bottom: solid white;
+}
+
+.home-section svg{
+    margin-right: 25px;
+    margin-left: 10px;
+}
+
+.question{
+    color: black;
+    margin-top: 25px;
+    border-bottom: solid white;
+}
+
+.question svg{
+    margin-right: 25px;
+    margin-left: 10px;
+}
+
+.history{
+    color: black;
+    margin-top: 25px;
+    border-bottom: solid white;
+}
+
+.history svg{
+    margin-right: 25px;
+    margin-left: 10px;
+}
+
+.container-fluid{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    overflow: hidden;
+}
+
+.question:hover{
+    border-bottom: solid gold;
+    border-left: solid gold;
+    color: black;
+    transition-duration: 0.25s;
+}
+
+.history:hover{
+    border-bottom: solid gold;
+    border-left: solid gold;
+    color: black;
+    transition-duration: 0.25s;
+}
+
+.home-section:hover{
+    border-bottom: solid gold;
+    border-left: solid gold;
+    color: black;
+    transition-duration: 0.25s;
+}
+
+.navbar-items .active .question{
+    border-left: solid brown;
+    font-weight: bold;
+    color: brown;
+}
+
+.navbar-items .active .home-section{
+    border-left: solid brown;
+    font-weight: bold;
+    color: brown;
+}
+
+.navbar-items .active .history{
+    border-left: solid brown;
+    font-weight: bold;
+    color: brown;
+}
