@@ -10,7 +10,11 @@ from bson.objectid import ObjectId
 from bson.json_util import dumps
 
 app = FastAPI()
+uri=f"mongodb+srv://dineshaudayangi99:YGWykxS7jMci4PA5@cluster0.qlo4c.mongodb.net/"
 origins=["http://localhost:3000"]
+client=MongoClient(uri)
+qa_db=client.TEST
+qa_collection=qa_db['QA_Collection']
 
 app.add_middleware(
     CORSMiddleware,
@@ -42,13 +46,13 @@ class Question(BaseModel):
 @app.post("/generate-answer/")
 async def generate_answer_endpoint(question: Question):
     answer = generate_answer(vector_db,question.question) # Call your existing function here
-    #result = qa_collection.insert_one({"question":question.question,"answer": answer})
+    result = qa_collection.insert_one({"question":question.question,"answer": answer})
     return{"answer": answer}
 
-# @app.get("/history")
-# def get_all_questions():
-#     all_qa = qa_collection.find()
-#     return dumps(all_qa)
+@app.get("/history")
+def get_all_questions():
+    all_qa = qa_collection.find()
+    return dumps(all_qa)
 
 if __name__ == "__main__":
     import uvicorn
